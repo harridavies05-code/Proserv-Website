@@ -2,7 +2,7 @@
 // TODO is a placeholder. Confirm with Harri's dad before launch, don't guess.
 
 export const business = {
-  name: "ProServ Electrical",
+  name: "Proserv Electrical",
   tagline: "Trusted Domestic Electrician in Chester",
 
   phoneDisplay: "+44 7834 909338",

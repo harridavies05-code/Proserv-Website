@@ -58,7 +58,7 @@ export default function Navbar() {
             <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-white p-1.5 shadow-[0_0_16px_-2px_rgba(35,115,26,0.6)] sm:h-11 sm:w-11">
               <Image
                 src="/images/logo-icon.png"
-                alt="ProServ Electrical logo"
+                alt={`${business.name} logo`}
                 width={80}
                 height={64}
                 className="h-full w-full object-contain"

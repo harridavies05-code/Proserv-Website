@@ -33,7 +33,7 @@ export default function Hero() {
       >
         <Image
           src={heroPhoto}
-          alt="A ProServ Electrical electrician carrying out domestic electrical work"
+          alt={`A ${business.name} electrician carrying out domestic electrical work`}
           fill
           priority
           placeholder="blur"

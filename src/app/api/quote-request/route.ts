@@ -3,12 +3,13 @@ import { Resend } from "resend";
 import { getSupabaseAdmin } from "@/lib/supabase-admin";
 import { generateQuotePdf } from "@/lib/quotePdf";
 import { buildQuoteEmailHtml } from "@/lib/quoteEmailHtml";
+import { business } from "@/lib/business";
 
 // proservelectrical.co.uk verified in Resend 2026-09-16 (sending enabled),
 // switched over from the interim harri.davies05@gmail.com / onboarding@
 // resend.dev addresses used while waiting on the domain purchase.
 const NOTIFY_TO = "Proservchester@sky.com";
-const FROM_ADDRESS = "ProServ Electrical <quotes@proservelectrical.co.uk>";
+const FROM_ADDRESS = `${business.name} <quotes@proservelectrical.co.uk>`;
 
 const GENERIC_ERROR =
   "Something went wrong sending your enquiry. Please call or email us directly instead.";

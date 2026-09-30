@@ -5,6 +5,7 @@ import L from "leaflet";
 import { MapContainer, TileLayer, Circle, CircleMarker, Tooltip, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { BUSINESS_COORDS, SERVICE_RADIUS_MILES } from "@/lib/geo";
+import { business } from "@/lib/business";
 
 const RADIUS_METERS = SERVICE_RADIUS_MILES * 1609.34;
 
@@ -50,7 +51,7 @@ export default function ServiceAreaMap() {
           pathOptions={{ color: "#f59e0b", fillColor: "#f59e0b", fillOpacity: 1, weight: 2 }}
         >
           <Tooltip permanent direction="top" offset={[0, -6]} className="!bg-black/80 !text-white !border-brand-amber/40">
-            ProServ Electrical
+            {business.name}
           </Tooltip>
         </CircleMarker>
         <FitToRadius />

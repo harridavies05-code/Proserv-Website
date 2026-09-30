@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="flex gap-4">
               <a
                 href={business.socialLinks.facebook}
-                aria-label="ProServ Electrical on Facebook"
+                aria-label={`${business.name} on Facebook`}
                 title="TODO: add real Facebook page URL"
                 className="text-white/60 transition-colors hover:text-brand-green"
               >
@@ -35,7 +35,7 @@ export default function Footer() {
               </a>
               <a
                 href={business.socialLinks.instagram}
-                aria-label="ProServ Electrical on Instagram"
+                aria-label={`${business.name} on Instagram`}
                 title="TODO: add real Instagram page URL"
                 className="text-white/60 transition-colors hover:text-brand-green"
               >

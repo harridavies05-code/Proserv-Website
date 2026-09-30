@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { coreServices } from "@/lib/business";
+import { business, coreServices } from "@/lib/business";
 import { serviceIcons } from "@/lib/serviceIcons";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Services | ProServ Electrical",
+  title: `Services | ${business.name}`,
   description:
     "Full-service domestic electrical work in Chester: EICRs, emergency call-outs, EV charger installation, fault finding, and consumer unit upgrades.",
 };

@@ -1,9 +1,9 @@
-# CLAUDE.md — ProServ Electrical Website
+# CLAUDE.md — Proserv Electrical Website
 
 > Entry point for Claude Code on this project. Read this first, every session.
 
 ## Who this is for
-Building the marketing website for **ProServ Electrical** — a UK sole trader electrician business.
+Building the marketing website for **Proserv Electrical** — a UK sole trader electrician business.
 
 - Owner: Harri's dad — qualified electrician, currently a sole trader.
 - I (Harri) am directing this build on his behalf. He's skilled with his hands, not admin/digital — I handle that side, and I'm using this project to learn web/business admin along the way.
@@ -16,7 +16,7 @@ Building the marketing website for **ProServ Electrical** — a UK sole trader e
 - Still a sole trader. No employees mentioned.
 
 ## What this website is for
-Advertise and generate leads for ProServ Electrical as a full-service domestic electrician. Core services are shown as equals on the homepage, no single one is the headline or lead offer: EICRs (condition reports), 24/7 emergency call-outs, EV charger installation & maintenance, fault finding & diagnosis, and consumer unit upgrades. More services may be added to this core list later.
+Advertise and generate leads for Proserv Electrical as a full-service domestic electrician. Core services are shown as equals on the homepage, no single one is the headline or lead offer: EICRs (condition reports), 24/7 emergency call-outs, EV charger installation & maintenance, fault finding & diagnosis, and consumer unit upgrades. More services may be added to this core list later.
 
 ### Known so far
 - Target customer: UK homeowners needing domestic electrical work generally, not just EV owners, though home EV charger installs remain a key part of the mix.
@@ -30,7 +30,7 @@ Advertise and generate leads for ProServ Electrical as a full-service domestic e
 - **Deferred by Harri, 2026-09-14**: quotes should eventually be generated as a PDF and emailed to his dad automatically. Explicitly parked for later, don't build until asked.
 
 ### Decided
-- **Site scope, updated 2026-09-15**: ProServ Electrical is positioned as a full-service domestic electrician, not EV-first. Homepage and `/services` show five core services as equals, none singled out as the lead offer: EICRs, 24/7 call outs, EV charger installation, fault finding, consumer unit upgrades. Exact names and copy for all five confirmed by Harri, 2026-09-15, in `coreServices` in `src/lib/business.ts`, that file is the single source used by both the homepage cards and the `/services` page, don't fork the copy between them. `/services` ends with "More services coming soon." General "gardening" as a category stays dropped, only outdoor power/garden lighting was ever kept from that. Still open: whether the broader secondary list confirmed 2026-09-13 (lighting, sockets, full domestic installs, outdoor power, general repairs) applies alongside these 5.
+- **Site scope, updated 2026-09-15**: Proserv Electrical is positioned as a full-service domestic electrician, not EV-first. Homepage and `/services` show five core services as equals, none singled out as the lead offer: EICRs, 24/7 call outs, EV charger installation, fault finding, consumer unit upgrades. Exact names and copy for all five confirmed by Harri, 2026-09-15, in `coreServices` in `src/lib/business.ts`, that file is the single source used by both the homepage cards and the `/services` page, don't fork the copy between them. `/services` ends with "More services coming soon." General "gardening" as a category stays dropped, only outdoor power/garden lighting was ever kept from that. Still open: whether the broader secondary list confirmed 2026-09-13 (lighting, sockets, full domestic installs, outdoor power, general repairs) applies alongside these 5.
 - **Stack**: Next.js (App Router) + TypeScript + Tailwind CSS v4.
 - **Colour scheme / theme**: black and green futuristic (updated by Harri, 2026-09-14). Site-wide dark theme, black/near-black backgrounds (`--background`, `--color-surface` in `globals.css`), white/light-gray body text. Green (`#23731a`) is reserved for effects only, never body text: borders, glow shadows, badge fills, bullet dots, focus rings, hover states. Amber stays as the separate CTA colour (buttons, "primary service" highlight) so calls to action still pop against the green accents. Tailwind tokens: `brand-green`, `brand-green-dark`, `brand-amber`, `brand-amber-dark`, `surface` (defined in `src/app/globals.css`).
 - **Writing style**: no em dashes, anywhere, in site copy, code comments, or CLAUDE.md. Use a period, comma, or colon instead. Applies to chat responses too, not just files.

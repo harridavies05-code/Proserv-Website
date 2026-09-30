@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import workPhoto from "../../public/images/ev-install-2.jpeg";
 import Reveal from "./Reveal";
 import Sparks from "./Sparks";
+import { business } from "@/lib/business";
 
 export default function OurWork() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -23,7 +24,7 @@ export default function OurWork() {
       <motion.div style={{ y: imageY }} className="absolute inset-0 -z-20 scale-[1.15]">
         <Image
           src={workPhoto}
-          alt="ProServ Electrical carrying out domestic electrical work"
+          alt={`${business.name} carrying out domestic electrical work`}
           fill
           placeholder="blur"
           sizes="100vw"
